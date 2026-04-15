@@ -1,9 +1,9 @@
 from picamera2 import Picamera2
 import numpy as np
 
-CAMERA_WIDTH = 800
-CAMERA_HEIGHT = 600
-CAMERA_FPS = 20
+CAMERA_WIDTH = 1280
+CAMERA_HEIGHT = 720
+CAMERA_FPS = 30
 
 class CameraManager:
     def __init__(self):

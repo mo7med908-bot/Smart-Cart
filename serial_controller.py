@@ -4,7 +4,7 @@ import threading
 import time
 
 PORT = "/dev/ttyACM0"  # Configure your Arduino port here
-BAUDRATE = 9600
+BAUDRATE = 115200
 
 class SerialController:
     @staticmethod
@@ -19,7 +19,7 @@ class SerialController:
             bool: True if the port can be opened, False otherwise.
         """
         try:
-            ser = serial.Serial(port, 9600, timeout=1)
+            ser = serial.Serial(port, BAUDRATE, timeout=1)
             ser.close()
             return True
         except serial.SerialException:
